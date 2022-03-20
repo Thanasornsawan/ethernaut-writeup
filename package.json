@@ -16,8 +16,10 @@
     "url": "https://github.com/Thanasornsawan/ethernaut-writeup/issues"
   },
   "homepage": "https://github.com/Thanasornsawan/ethernaut-writeup#readme",
-  "dependencies": {
+  "devDependencies": {
     "dotenv": "^16.0.0",
+    "keccak": "^3.0.2",
+    "rlp": "^3.0.0",
     "web3": "^1.7.1"
   }
 }
