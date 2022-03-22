@@ -18,7 +18,6 @@ Knowing about proxy patterns and the way they handle storage variables.
 Recommend watch youtube [Multi Delegatecall | Solidity 0.8](https://youtu.be/NkTWU6tc9WU)
 for understand muticall concept, the example code from that youtube in (example.sol)[https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Puzzle%20Wallet/example.sol]
 
-
 ### Description
 In an easy word, _Proxy_ and _Logic_ contracts share storage via `delegatecall`, that means `pendingAdmin` is `owner` as well as `admin` is `maxBalance`.
 
@@ -48,14 +47,19 @@ Once you are whiltelisted, you can call `execute` and `multicall` strategically 
 Credit: idea about step by step is from [maAPPsDEV/puzzle-wallet-attack](https://github.com/maAPPsDEV/puzzle-wallet-attack)
 
 ## Test in console
+```shell
 contract.abi
 (10) [{…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]0: {inputs: Array(1), name: 'addToWhitelist', outputs: Array(0), stateMutability: 'nonpayable', type: 'function', …}1: {inputs: Array(1), name: 'balances', outputs: Array(1), stateMutability: 'view', type: 'function', …}2: {inputs: Array(0), name: 'deposit', outputs: Array(0), stateMutability: 'payable', type: 'function', …}3: {inputs: Array(3), name: 'execute', outputs: Array(0), stateMutability: 'payable', type: 'function', …}4: {inputs: Array(1), name: 'init', outputs: Array(0), stateMutability: 'nonpayable', type: 'function', …}5: {inputs: Array(0), name: 'maxBalance', outputs: Array(1), stateMutability: 'view', type: 'function', …}6: {inputs: Array(1), name: 'multicall', outputs: Array(0), stateMutability: 'payable', type: 'function', …}7: {inputs: Array(0), name: 'owner', outputs: Array(1), stateMutability: 'view', type: 'function', …}8: {inputs: Array(1), name: 'setMaxBalance', outputs: Array(0), stateMutability: 'nonpayable', type: 'function', …}9: {inputs: Array(1), name: 'whitelisted', outputs: Array(1), stateMutability: 'view', type: 'function', …}length: 10[[Prototype]]: Array(0)
-
+```
+```shell
 contract.address
 '0xdcde1dfC141EE526afE58C48be75835565806f7C'
+```
 
+```shell
 await contract.owner();
 '0xe13a4a46C346154C41360AAe7f070943F67743c9'
+```
 
 from contract.abi, it means we interact directly with PuzzleWallet contract not PuzzleProxy.
 it cannot directly call the function `proposeNewAdmin` inside PuzzleProxy. Solve by using Remix to load your ABI PuzzleProxy into the address of the instance, or call it via function signature.
