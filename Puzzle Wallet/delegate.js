@@ -6,13 +6,16 @@ const player = "0x176366cFD97885245fAEA72f8cB6951e52655Adf";
 
 //we can deposit twice by input data as "["deposit()", "multicall([deposit()])"]"
 const depositSig = web3.eth.abi.encodeFunctionSignature("deposit()");
+//result same abi.encodeWithSelector(PuzzleWallet.deposit.selector) in solidity !!
 console.log("deposit(): "+ depositSig);
+
 const multicallSig = web3.eth.abi.encodeFunctionSignature("multicall(bytes[])");
 const deposit_param = web3.eth.abi.encodeParameter('bytes[]', [depositSig]); //web3.eth.abi.encodeParameter(type, parameter);
 //put deposit_param into function muticall
 var multicallSigWithDepositFunc = deposit_param.substring(1);
 multicallSigWithDepositFunc = multicallSigWithDepositFunc.substring(1);
 multicallSigWithDepositFunc = multicallSig.toString() + multicallSigWithDepositFunc;
+//result same abi.encodeWithSelector(PuzzleWallet.multicall.selector,data); in solidity when data is ["deposit_param"]
 console.log("multicall([deposit()]): "+ multicallSigWithDepositFunc); 
 
 web3.eth.getBalance(address, (err, wei) => {
