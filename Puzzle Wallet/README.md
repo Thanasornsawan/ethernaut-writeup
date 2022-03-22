@@ -16,7 +16,7 @@ Understanding how delegatecalls work and how msg.sender and msg.value behaves wh
 Knowing about proxy patterns and the way they handle storage variables.
 
 Recommend watch youtube [Multi Delegatecall | Solidity 0.8](https://youtu.be/NkTWU6tc9WU)
-for understand muticall concept, the example code from that youtube in (example.sol)[https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Puzzle%20Wallet/example.sol]
+for understand muticall concept, the example code from that youtube in [example.sol](https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Puzzle%20Wallet/example.sol)
 
 ### Description
 In an easy word, _Proxy_ and _Logic_ contracts share storage via `delegatecall`, that means `pendingAdmin` is `owner` as well as `admin` is `maxBalance`.
