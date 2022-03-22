@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/Thanasornsawan/ethernaut-writeup#readme",
   "devDependencies": {
+    "@alch/alchemy-web3": "^1.2.5",
+    "@ethereumjs/common": "^2.6.2",
+    "@ethereumjs/tx": "^3.5.0",
     "dotenv": "^16.0.0",
     "keccak": "^3.0.2",
     "rlp": "^3.0.0",
