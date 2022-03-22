@@ -15,6 +15,10 @@ Little did they know, their lunch money was at risk…
 Understanding how delegatecalls work and how msg.sender and msg.value behaves when performing one.
 Knowing about proxy patterns and the way they handle storage variables.
 
+Recommend watch youtube [Multi Delegatecall | Solidity 0.8](https://youtu.be/NkTWU6tc9WU)
+for understand muticall concept, the example code from that youtube in (example.sol)[https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Puzzle%20Wallet/example.sol]
+
+
 ### Description
 In an easy word, _Proxy_ and _Logic_ contracts share storage via `delegatecall`, that means `pendingAdmin` is `owner` as well as `admin` is `maxBalance`.
 
@@ -40,6 +44,8 @@ Once you are whiltelisted, you can call `execute` and `multicall` strategically 
    - `multicall([deposit, multicall([deposit])])`
    - `execute(yourself)`
 5. Set `maxBalance` to be a new admin
+
+Credit: idea about step by step is from [maAPPsDEV/puzzle-wallet-attack](https://github.com/maAPPsDEV/puzzle-wallet-attack)
 
 ## Test in console
 contract.abi
@@ -72,16 +78,34 @@ contract.sendTransaction({ data: '0xa6376746000000000000000000000000c3a005e15cb3
 ```
 
 ### Method 2 using remix to load your ABI PuzzleProxy into the address of the instance
-see solution in ....
+see solution in [test.js](https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Puzzle%20Wallet/test.js)
 In this file, we use Alchemy web3 plugin to interact with metamask when send the raw transaction to contract.
+
+![run](https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Puzzle%20Wallet/photo/run.JPG)
+
+Transaction in Alchemy mempool from web3 transaction to interact with proposeNewAdmin(player)
+
+![run2](https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Puzzle%20Wallet/photo/run2.JPG)
 
 Verify result that you are the new owner:
 ```shell
 await contract.owner();
 ```
+
 Add yourself into whitelist:
 ```shell
-contract.addToWhitelist(player);
+await contract.addToWhitelist(player);
 ```
 
-Step3 - Step 5 see solution in file ....
+Verify result that player address in whitelist:
+```shell
+await contract.whitelisted(player);
+```
+
+Result on console:
+
+![console](https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Puzzle%20Wallet/photo/result1.JPG)
+
+Step3 - Step5 see solution in file [delegate.js](https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Puzzle%20Wallet/delegate.js)
+
+![complete](https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Puzzle%20Wallet/photo/complete.JPG)
