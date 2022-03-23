@@ -8,10 +8,10 @@ You will still start with 10 tokens of token1 and 10 of token2. The DEX contract
 
 ## Things that might help:
 
-How has the swap method been modified?
+- How has the swap method been modified?
 => No require((from == token1 && to == token2) || (from == token2 && to == token1), "Invalid tokens");
-It means we can pair any tokens,not need to be token1/token2
-Could you use a custom token contract in your attack?
+> It means we can pair any tokens,not need to be token1/token2
+- Could you use a custom token contract in your attack?
 => See [malToken.sol](malToken.sol)
 
 ```javascript
