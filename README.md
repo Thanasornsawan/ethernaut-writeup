@@ -15,3 +15,4 @@ Use network rinkeby on metamask to play on https://ethernaut.openzeppelin.com/
 - [x] [Puzzle Wallet](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Puzzle%20Wallet)
 - [x] [Denial](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Denial)
 - [x] [Shop](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Shop)
+- [x] [Dex](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Dex)
