@@ -13,3 +13,5 @@ Use network rinkeby on metamask to play on https://ethernaut.openzeppelin.com/
 - [x] [Preservation](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Preservation)
 - [x] [Recovery](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Recovery)
 - [x] [Puzzle Wallet](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Puzzle%20Wallet)
+- [x] [Denial](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Denial)
+- [x] [Shop](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Shop)
