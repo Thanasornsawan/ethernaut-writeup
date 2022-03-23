@@ -1,6 +1,7 @@
 ## Ethernaut writeup
 Use network rinkeby on metamask to play on https://ethernaut.openzeppelin.com/
 
+- [x] [Fallout](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Fallout)
 - [x] [Coin Flip](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Coin%20Flip)
 - [x] [Elevator](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Elevator)
 - [x] [Force](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Force)
