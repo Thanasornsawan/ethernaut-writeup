@@ -19,7 +19,7 @@ let callbackFNConstructor = (index) => (error, contractData) => {
     '0xa952766b53db2509e7e6d344a103a4900e16f90a18b5ee17b4b7bd9ae48fe736', //uint16 awkwardness
     '0x621e4f9c9fce7ccc4829660be3ae726a0bee35eda2d34f2381083f76e5b25ffb' //bytes32[3] data
     ]
-    Maximum one slot hold 32 byte mean 256 bit (1byte=8 bit),if less than 32 byte,it possible to that slot can hold more than one parameters
+    Maximum one slot hold 32 bytes mean 256 bit (1byte=8 bit),if less than 32 byte,it possible to that slot can hold more than one parameters
     Ex: slot0= bool value have 1 byte and byte4 value have 4 byte
     */
   }

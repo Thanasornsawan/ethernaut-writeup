@@ -19,3 +19,4 @@ Use network rinkeby on metamask to play on https://ethernaut.openzeppelin.com/
 - [x] [Dex](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Dex)
 - [x] [Dex2](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Dex2)
 - [x] [Motorbike](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Motorbike)
+- [x] [Alien Codex](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Alien%20Codex)
