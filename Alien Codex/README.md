@@ -51,7 +51,7 @@ Refer to maximum one slot hold 32 bytes mean 256 bit (1byte=8 bit)
 _owner variable is located at slot 0 (address have 20 bytes), we need to change from 20bytes to 32bytes for `_content`.
 See solution in [addr32bytes.js](https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Alien%20Codex/addr32bytes.js)
 
-Find index of owner, see solution in [callIndex.sol](https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Alien%20Codex/callIndex.sol)
+Find index of owner, see solution in [callIndex.sol](https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Alien%20Codex/calIndex.sol)
 
 ![index](https://github.com/Thanasornsawan/ethernaut-writeup/blob/main/Alien%20Codex/photo/index.JPG)
 
