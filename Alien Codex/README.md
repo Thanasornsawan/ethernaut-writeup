@@ -34,7 +34,7 @@ await web3.eth.getStorageAt(contract.address,1)
 > '0x0000000000000000000000000000000000000000000000000000000000000000'
 ```
 
-It no value at all, we try underflow attack by call function retract() to open all dynamic array:
+codex.length=0 is very small, we try underflow attack by call function retract() to open all dynamic array:
 ```javascript
 await contract.retract();
 ```
