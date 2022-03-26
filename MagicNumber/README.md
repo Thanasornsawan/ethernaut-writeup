@@ -20,7 +20,7 @@ Total now from step1-step6 is 10 bytes = "0x602a60005260206000f3" //this is valu
 refer from [ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes](https://medium.com/coinmonks/ethernaut-lvl-19-magicnumber-walkthrough-how-to-deploy-contracts-using-raw-assembly-opcodes-c50edb0f71a2)
 
 ## Part2: Initialization opcodes.
-These opcodes need to replicate your runtime opcodes to memory, before returning them to the EVM. Recall that the EVM will then automatically save the runtime sequence 604260805260206080f3 to the blockchain.<br />
+These opcodes need to replicate your runtime opcodes to memory, before returning them to the EVM. Recall that the EVM will then automatically save the runtime sequence 0x602a60005260206000f3 to the blockchain.<br />
 
 Store your `42` or `0x2a` as hex value in memory with `mstore(p, v)`, where p is position and v is the value in hexadecimal,we store value in memory index 0:
 ```
