@@ -11,7 +11,7 @@ contract calculateIndex {
         //the value of codex in slot1 is from 2 ** 256 - 1 or codex.length--; (underflow from size uint 256 minus 1)
         //check codex value: '0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
         //we need to use value of codex in slot1 - first element of codex (refer to bool) +1 for overflow to the slot0 
-        //which is index of owner that come after byte of bool.
+        //Formulas is index = (slotToModify - keccak256(arraySlot)) toTwosCompliment(256)
         return index;
         //index is 35707666377435648211887908874984608119992236509074197713628505308453184860938
     }
