@@ -19,7 +19,7 @@ Use network rinkeby on metamask to play on https://ethernaut.openzeppelin.com/
 - [x] [Naught Coin](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Naught%20Coin)
 - [x] [Preservation](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Preservation)
 - [x] [Recovery](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Recovery)
-- [ ] [Magic Number]()
+- [x] [MagicNumber](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/MagicNumber)
 - [x] [Alien Codex](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Alien%20Codex)
 - [x] [Denial](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Denial)
 - [x] [Shop](https://github.com/Thanasornsawan/ethernaut-writeup/tree/main/Shop)
