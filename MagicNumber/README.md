@@ -11,7 +11,7 @@ First, we need to store `42` in 10 bytes of opcode:
 Step1: PUSH1 2a // push 42 on the stack (PUSH1 is opcode=x60) =>x602a
 Step2: PUSH1 0 // push 0x0 on top of the stack (we only have one storage variable so it will be located at storage slot 0x0 =>x6000
 Step3: MSTORE // store value of opcodes in memory which MSTORE=x52
-Step4: PUSH1 20 // push all opcodes into 32 bytes =>x6020
+Step4: PUSH1 20 // push value 32 bytes in on the stack =>x6020
 Step5: PUSH1 0 // push 0x0 on top of this stack =>x6000
 Step6: RETURN // return value to EVM ( RETURN is opcode which is 0xf3 in hex value)
 Total now from step1-step6 is 10 bytes = "0x602a60005260206000f3" //this is value that we want program to have in one slot
